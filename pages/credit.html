@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Monitor | Credit</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="../img/icons/others/logo_favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+        <!-- top header -->
+        <nav class="navbar navbar-expand-lg menu">
+            <div class="container">
+                <a href="../index.html" class="navbar-brand"><img src="../img/icons/menu_icons/logo.svg" alt="logo"></a>
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item report_btn">
+                        <a class="nav-link text-light d-flex align-items-center" href="report.html"><img
+                                src="../img/icons/menu_icons/report.svg" style="width: 20px;height: 20px;"
+                                alt="">&nbsp;&nbsp;Report</a>
+                    </li>
+                    <li class="nav-item activity_btn ms-3 me-3">
+                        <a class="nav-link text-light d-flex align-items-center" href="activity.html"><img
+                                src="../img/icons/menu_icons/activity.svg" style="width: 20px;height: 20px;"
+                                alt="">&nbsp;&nbsp;Activity</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">
+                            <div class="notification">
+                                <img style="width: 18px;" src="../img/icons/menu_icons/notification.svg" alt="">
+                                <div class="dot"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="#" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img
+                                style="width: 40px;" src="../img/icons/rounded_icons/profile.svg" alt="">&nbsp;&nbsp;&nbsp;&nbsp;Olivia
+                            Rhye&nbsp;&nbsp;&nbsp;<img style="width: 14px;" src="../img/icons/menu_icons/down arrow.svg" alt=""></a>
+                        <ul class="dropdown-menu sub_menu">
+                            <li><a class="dropdown-item sub_menu_item" href="my_account.html"><img src="../img/icons/others/my_account.svg"
+                                        alt="">&nbsp;&nbsp;My Account</a></li>
+                            <li><a class="dropdown-item sub_menu_item" href="#"><img src="../img/icons/others/settings.svg"
+                                        alt="">&nbsp;&nbsp;Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item sub_menu_item" href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- menu -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg d-flex justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="../index.html"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/dashboard.svg" alt=""><span
+                                style="margin-left: 8px;">Dashboard</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="property.html"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/home.svg" alt=""><span style="margin-left: 8px;">Property</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="identity.html"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/identity.svg" alt=""><span
+                                style="margin-left: 8px;">Identity</span><span class="notify_number"
+                                style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option active" href="#"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/credit_blue.svg" alt=""><span style="margin-left: 8px;">Credit</span><span
+                                class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="crimes.html"><img style="width: 23px;"
+                                src="../img/icons/menu_icons/crime.svg" alt=""><span style="margin-left: 8px;">Crimes</span><span
+                                class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="sex_offenders.html"><img style="width: 21px;"
+                                src="../img/icons/menu_icons/offender.svg" alt=""><span style="margin-left: 10px;">Sex
+                                offenders</span><span class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="criminal_search.html"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/search.svg" alt=""><span style="margin-left: 8px;">Criminal
+                                Search</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main body start -->
+    <section class="bg-light overview_section">
+        <div class="container">
+            <!-- credit statistics start -->
+            <div class="row">
+                <!-- credit monitoring left side -->
+                <div class="col-5">
+                    <h2 class="heading_left mb-3">Credit Monitoring</h2>
+                    <div class="row m-auto">
+                        <div class="col credit_stats_left">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="credit_score pt-2">Score</p>
+                                </div>
+                                <div class="col">
+                                    <a href="#">
+                                        <img class="float-end" src="../img/icons/buttons/download_btn_black.svg" alt="">
+                                    </a>
+                                </div>
+                                <hr style="margin-top: 10px;border: 1px solid #EFEFEF;">
+                            </div>
+                            <!-- credit score graph -->
+                            <div class="row" style="margin-top: 10px;margin-bottom: 60px;">
+                                <div class="col text-center">
+                                    <img class="img-fluid" src="../img/images/credit_graph.svg" alt="">
+                                </div>
+                            </div>
+                            <!-- credit score status -->
+                            <div class="row pt-3">
+                                <div class="col">
+                                    <p class="status_text">Updated</p>
+                                </div>
+                                <div class="col">
+                                    <p class="status_text float-end">Next Update</p>
+                                </div>
+                                <hr style="border: 1px solid #EFEFEF;">
+                            </div>
+                            <!-- credit score date -->
+                            <div class="row">
+                                <div class="col">
+                                    <p class="score_date">Feb 21, 2020</p>
+                                </div>
+                                <div class="col">
+                                    <p class="score_date float-end">Mar 21, 2021</p>
+                                </div>
+                            </div>
+                            <!-- credit score texts -->
+                            <div class="row">
+                                <div class="col-7">
+                                    <p class="score_text">Credit scores used by vendors</p>
+                                </div>
+                                <div class="col">
+                                    <p class="score_text2 float-end">Vantage Score <span style="color: #05BF90;font-size: 16px;">3.0</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- credit monitoring right side -->
+                <div class="col-7">
+                    <h2 class="heading_right mb-3" style="margin-left: 80px;">EQUIFAX</h2>
+                    <div class="row credit_stats_right m-auto">
+                        <div class="col">
+                            <p class="Monitor_heading mb-3">Credit Score Change</p>
+                            <div class="row monitor_stats" style="margin-top: 20px;">
+                                <div class="col">
+                                    <p style="margin: 0;" class="monitor_name mb-2">Hi Patrick,</p>
+                                    <p style="margin: 0;" class="monitor_comments mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut.</p>
+                                </div>
+                                <div class="row mt-3 mx-auto">
+                                    <div class="col monitor_result">
+                                        <div class="row">
+                                            <div class="col">
+                                                <span class="my-auto d-flex align-items-center">
+                                                    <img src="../img/icons/others/monitor_graph.svg" alt="">&nbsp;&nbsp;<span style="font-weight: 600;font-size: 48px;line-height: 48px;letter-spacing: -0.03em;color: #000C40;">160</span> <span style="font-weight: 600;font-size: 24px;line-height: 32px;letter-spacing: -0.02em;color: #909BAD;margin-top: 10px;">&nbsp;&nbsp;points</span>
+                                                </span>
+                                            </div>
+                                            <div class="col my-auto">
+                                                <span style="color: #080808;font-weight: 600;font-size: 24px;line-height: 32px;letter-spacing: -0.02em;">
+                                                    <span style="color: #05BF90;">+4</span> <span style="color: #909BAD;">since</span> January 11
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- monitoring graph -->
+                    <div class="row credit_stats_right2 mx-auto">
+                        <div class="col">
+                            <p class="monitoring_graph_title pt-1">Title</p>
+                            <img class="img-fluid" src="../img/images/credit_monitor_graph.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- credit statistics end -->
+
+            <!-- credit report start -->
+            <div class="credit_report mt-3">
+                <div class="row d-flex align-items-center py-3">
+                    <div class="col border-end">
+                        <p class="credit_report_number pb-1">$24,660</p>
+                        <p class="credit_report_area">available credit</p>
+                    </div>
+                    <div class="col border-end">
+                        <p class="credit_report_number pb-1">4 years</p>
+                        <p class="credit_report_area">oldest credit line</p>
+                    </div>
+                    <div class="col border-end">
+                        <p class="credit_report_number pb-1">5%</p>
+                        <p class="credit_report_area">credit used</p>
+                    </div>
+                    <div class="col border-end">
+                        <p class="credit_report_number pb-1">8</p>
+                        <p class="credit_report_area">recent inquiries</p>
+                    </div>
+                    <div class="col">
+                        <p class="credit_report_number pb-1">14</p>
+                        <p class="credit_report_area">open accounts</p>
+                    </div>
+                </div>
+            </div>
+            <!-- credit report end -->
+
+            <!-- report summary start -->
+            <div class="report_summary_area mt-3">
+                <div class="row">
+                    <div class="col-3">
+                        <!-- heading -->
+                        <p class="d-flex align-items-center address">Report Summary</p>
+                    </div>
+                    <div class="col-7"></div>
+                    <div class="col-2">
+                        <!-- download button -->
+                        <a href="#">
+                            <img class="float-end" src="../img/icons/buttons/download_btn_black.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- summary heading -->
+                <div class="row mt-3">
+                    <div class="col">
+                        <p class="summary_heading">Review this summary for a quick view of key information maintained in your Equifax credit report, as well as your resulting <br /> Equifax Credit Score and rating.</p>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+                <!-- report date -->
+                <div class="row my-3 pb-3">
+                    <div class="col-2" style="border-right: 1px solid #EFEFEF;">
+                        <p class="report_date_heading" style="margin: 0;padding: 0;color: #344054;">REPORT DATE</p>
+                        <p class="report_date_details pt-1" style="margin: 0;padding: 0;">3/1/2018</p>
+                    </div>
+                    <div class="col ps-4" style="border-right: 1px solid #EFEFEF;">
+                        <p class="report_date_heading" style="margin: 0;padding: 0;color: #344054;">AVERAGE ACCOUNT AGE</p>
+                        <p class="report_date_details pt-1" style="margin: 0;padding: 0;">Averape Account Ape</p>
+                    </div>
+                    <div class="col-4 ps-4">
+                        <p class="report_date_heading" style="margin: 0;padding: 0;color: #344054;">OLDEST ACCOUNT</p>
+                        <p class="report_date_details pt-1" style="margin: 0;padding: 0;">KITSAT CREDIT UNION / 3/1/2000</p>
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <!-- report score and rating -->
+                <div class="report_score">
+                    <div class="row">
+                        <div class="col-12 d-flex align-items-center">
+                            <div style="width: 859px;">
+                                <p class="report_score_heading">Credit Score and Rating</p>
+                                <p class="report_score_headDetails" style="font-weight: 500;">Your credit score and rating are not part of your credit report, but are
+                                    derived from the information in your file.</p>
+                            </div>
+                            <div class="border-end" style="width: 163px;">
+                                <p class="report_score_heading2 pb-1">Credit Score</p>
+                                <p class="report_score_head2Details">789</p>
+                            </div>
+                            <div style="margin-left: 32px;">
+                                <p class="report_score_heading2 pb-1">Score Rating</p>
+                                <p class="report_score_head2Details2">Excellent</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- credit account -->
+                <div class="credit_account mt-4">
+                    <div class="row">
+                        <div class="col">
+                            <p class="credit_account_heading mb-1">Credit Accounts</p>
+                            <p class="credit_account_detail">Your credit report includes information about activity on wour credit accounts that affects your credit score and
+                            rating. The table below is an overview of your current account and status.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <img class="img-fluid" src="../img/icons/others/credit_account.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- other credit -->
+                <div class="others mt-4">
+                    <div class="row">
+                        <div class="col">
+                            <p class="credit_account_heading">Other Credit Items</p>
+                            <p class="credit_account_detail pt-1" style="font-weight: 500;">Your credit report includes information about instances of non account items that may affect your credit score and rating. The table below is a summary of non-account related items on your report.</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center mt-4">
+                        <div class="col" style="border-right: 1px solid #EFEFEF;">
+                            <p class="others_credit_number pb-1">5</p>
+                            <p class="others_credit_name">Consumer Statements</p>
+                        </div>
+                        <div class="col" style="border-right: 1px solid #EFEFEF;">
+                            <p class="others_credit_number pb-1">3</p>
+                            <p class="others_credit_name">Personal Information</p>
+                        </div>
+                        <div class="col" style="border-right: 1px solid #EFEFEF;">
+                            <p class="others_credit_number pb-1">1</p>
+                            <p class="others_credit_name">Inquiries</p>
+                        </div>
+                        <div class="col" style="border-right: 1px solid #EFEFEF;">
+                            <p class="others_credit_number pb-1">3</p>
+                            <p class="others_credit_name">Public Records</p>
+                        </div>
+                        <div class="col" style="border-right: 1px solid #EFEFEF;">
+                            <p class="others_credit_number pb-1">7</p>
+                            <p class="others_credit_name">Collections</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- reportt summary end -->
+        </div>
+    </section>
+    <!-- main body end -->
+
+
+    <!-- js links -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

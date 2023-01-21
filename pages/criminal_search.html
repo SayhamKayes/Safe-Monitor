@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Monitor | Criminal Search</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="../img/icons/others/logo_favicon.svg" type="image/x-icon">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+        <!-- top header -->
+        <nav class="navbar navbar-expand-lg menu">
+            <div class="container">
+                <a href="../index.html" class="navbar-brand"><img src="../img/icons/menu_icons/logo.svg" alt="logo"></a>
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item report_btn">
+                        <a class="nav-link text-light d-flex align-items-center" href="report.html"><img
+                                src="../img/icons/menu_icons/report.svg" style="width: 20px;height: 20px;"
+                                alt="">&nbsp;&nbsp;Report</a>
+                    </li>
+                    <li class="nav-item activity_btn ms-3 me-3">
+                        <a class="nav-link text-light d-flex align-items-center" href="activity.html"><img
+                                src="../img/icons/menu_icons/activity.svg" style="width: 20px;height: 20px;"
+                                alt="">&nbsp;&nbsp;Activity</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">
+                            <div class="notification">
+                                <img style="width: 18px;" src="../img/icons/menu_icons/notification.svg" alt="">
+                                <div class="dot"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="#" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img
+                                style="width: 40px;" src="../img/icons/rounded_icons/profile.svg" alt="">&nbsp;&nbsp;&nbsp;&nbsp;Olivia
+                            Rhye&nbsp;&nbsp;&nbsp;<img style="width: 14px;" src="../img/icons/menu_icons/down arrow.svg" alt=""></a>
+                        <ul class="dropdown-menu sub_menu">
+                            <li><a class="dropdown-item sub_menu_item" href="my_account.html"><img src="../img/icons/others/my_account.svg"
+                                        alt="">&nbsp;&nbsp;My Account</a></li>
+                            <li><a class="dropdown-item sub_menu_item" href="#"><img src="../img/icons/others/settings.svg"
+                                        alt="">&nbsp;&nbsp;Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item sub_menu_item" href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- menu -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg d-flex justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="../index.html"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/dashboard.svg" alt=""><span
+                                style="margin-left: 8px;">Dashboard</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="property.html"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/home.svg" alt=""><span style="margin-left: 8px;">Property</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="identity.html"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/identity.svg" alt=""><span
+                                style="margin-left: 8px;">Identity</span><span class="notify_number"
+                                style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="credit.html"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/credit.svg" alt=""><span style="margin-left: 8px;">Credit</span><span
+                                class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="crimes.html"><img style="width: 23px;"
+                                src="../img/icons/menu_icons/crime.svg" alt=""><span style="margin-left: 8px;">Crimes</span><span
+                                class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="sex_offenders.html"><img style="width: 21px;"
+                                src="../img/icons/menu_icons/offender.svg" alt=""><span style="margin-left: 10px;">Sex
+                                offenders</span><span class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option active" href="#"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/search_blue.svg" alt=""><span style="margin-left: 8px;">Criminal
+                                Search</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main body start -->
+    <section class="bg-light overview_section">
+        <div class="container">
+            <!-- overview area start -->
+            <!-- heading -->
+            <h2 class="overview">Criminal Search</h2>
+            
+            <!-- criminal search section -->
+            <div class="criminal_search_section mt-3">
+                <div class="row">
+                    <div class="col">
+                        <a href="#" class="crime_btn crime_btn_active">Multi-Search</a>&nbsp;
+                        <a href="criminal search page/people_search.html" class="crime_btn">People Search</a>&nbsp;
+                        <a href="criminal search page/vehicle_search.html" class="crime_btn">Vehicle Search</a>&nbsp;
+                        <a href="criminal search page/nickname_search.html" class="crime_btn">Nickname Search</a>
+                    </div>
+                </div>
+                <!-- search -->
+                <div class="row">
+                    <div class="col">
+                        <!-- search box -->
+                        <form class="d-flex mt-4 criminalSearch border p-2" role="search">
+                            <i class="fa fa-search"></i>
+                            <input class="form-control searchBox me-3" type="search" placeholder="Jeff Johnson " aria-label="Search">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input class="form-control searchBox location_search me-3" type="search" placeholder="Select location" aria-label="Search">
+                            <img src="../img/icons/buttons/search_btn.svg" alt="">
+                        </form>
+                    </div>
+                </div>
+                <!-- heading -->
+                <div class="row mt-4">
+                    <div class="col">
+                        <h2 style="font-weight: 600;font-size: 24px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">Criminal - Sex Offender - D.O.C. - People Finder</h2>
+                        <p style="font-weight: 500;font-size: 16px;line-height: 24px;letter-spacing: -0.01em;color: #344054;">Search nationwide sex offender, department of corrections, court records and people locater in a single search! </p>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <p style="font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #909BAD;">Showing <span style="font-weight: 600;color: #080808;">2 result found for Jeff Johnson</span></p>
+                    </div>
+                </div>
+                <!-- more search button -->
+                <div class="row">
+                    <div class="col">
+                        <a href="#" class="crime_btn d-inline-block crime_btn_active">Sex Offender (2)</a>&nbsp;
+                        <a href="criminal search page/corrections.html" class="crime_btn d-inline-block">Dept. of Corrections (0)</a>&nbsp;
+                        <a href="#" class="crime_btn d-inline-block Court_record_btn">Court Records (0)</a>
+                    </div>
+                </div>
+                <!-- offender results -->
+                <div class="row offender_result mx-auto mt-4">
+                    <div class="col">
+                        <p class="m-0" style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #FB6514;">Sex Offender results <span style="font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #344054;">(2 matches found)</span></p>
+                        <p class="m-0 pt-2" style="font-weight: 600;font-size: 17px;line-height: 24px;letter-spacing: -0.01em;color: #080808;">Complete Criminal Checks is a type of internet archive of current and historical sex offenders in the USA.<span style="font-size: 16px;color: #344054;font-weight: 500;"> Always verify
+                        sex offender status using the Department of Justice Official Nationwide Sex Offender Search or the state sex offender
+                        registry the subject was convicted in criminal court before any final determination has been made.</span></p>
+                    </div>
+                </div>
+                <!-- criminal table -->
+                <div class="row mt-4">
+                    <div class="col criminal_table">
+                        <table>
+                            <tr>
+                                <td style="width: 210px;height: 56px;padding: 16px 24px;font-weight: 600;font-size: 16px;line-height: 24px;letter-spacing: -0.01em;color: #080808;background: #F5F5F5;">Name</td>
+                                <td style="width: 152px;height: 56px;padding: 16px 24px;font-weight: 600;font-size: 16px;line-height: 24px;letter-spacing: -0.01em;color: #080808;background: #F5F5F5;">Date of Birth</td>
+                                <td style="width: 110px;height: 56px;padding: 16px 24px;font-weight: 600;font-size: 16px;line-height: 24px;letter-spacing: -0.01em;color: #080808;background: #F5F5F5;">Gender</td>
+                                <td style="width: 110px;height: 56px;padding: 16px 24px;font-weight: 600;font-size: 16px;line-height: 24px;letter-spacing: -0.01em;color: #080808;background: #F5F5F5;">Height</td>
+                                <td style="width: 110px;height: 56px;padding: 16px 24px;font-weight: 600;font-size: 16px;line-height: 24px;letter-spacing: -0.01em;color: #080808;background: #F5F5F5;">Weight</td>
+                                <td style="width: 230px;height: 56px;padding: 16px 24px;font-weight: 600;font-size: 16px;line-height: 24px;letter-spacing: -0.01em;color: #080808;background: #F5F5F5;">Vehicle</td>
+                                <td style="width: 215px;height: 56px;padding: 16px 24px;font-weight: 600;font-size: 16px;line-height: 24px;letter-spacing: -0.01em;color: #080808;background: #F5F5F5;">Criminal Offense</td>
+                                <td style="width: 134px;height: 56px;padding: 16px 24px;font-weight: 600;font-size: 16px;line-height: 24px;letter-spacing: -0.01em;color: #080808;background: #F5F5F5;">Actions</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 210px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><img width="40" src="../img/images/criminal list/Avatar.png" alt="">&nbsp;&nbsp;Olivia Rhye </td>
+                                <td style="width: 152px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">02 May 1980</td>
+                                <td style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">Female</td>
+                                <td style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">6 02”</td>
+                                <td style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">180 lbs</td>
+                                <td style="width: 230px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">HUW3584 New York 2015 Toyota Corolla White</td>
+                                <td style="width: 215px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">Sexual Intercourse Non-NYS Felony Sex Offense</td>
+                                <td style="width: 134px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><a href="#"><img src="../img/icons/buttons/view_btn.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td
+                                    style="width: 210px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><img width="40" src="../img/images/criminal list/Avatar-1.png" alt="">&nbsp;&nbsp;Stefano WIlliam </td>
+                                <td
+                                    style="width: 152px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    02 May 1980</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    Male</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    6 02”</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    180 lbs</td>
+                                <td
+                                    style="width: 230px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    HUW3584 New York 2015 Toyota Corolla White</td>
+                                <td
+                                    style="width: 215px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    Sexual Intercourse Non-NYS Felony Sex Offense</td>
+                                <td
+                                    style="width: 134px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><a href="#"><img src="../img/icons/buttons/view_btn.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td
+                                    style="width: 210px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><img width="40" src="../img/images/criminal list/Avatar-2.png" alt="">&nbsp;&nbsp;
+                                    Bryan Alvaro </td>
+                                <td
+                                    style="width: 152px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    02 May 1980</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    Male</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    6 02”</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    180 lbs</td>
+                                <td
+                                    style="width: 230px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    HUW3584 New York 2015 Toyota Corolla White</td>
+                                <td
+                                    style="width: 215px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    Sexual Intercourse Non-NYS Felony Sex Offense</td>
+                                <td
+                                    style="width: 134px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><a href="#"><img src="../img/icons/buttons/view_btn.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td
+                                    style="width: 210px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><img width="40" src="../img/images/criminal list/Avatar-3.png" alt="">&nbsp;&nbsp;
+                                    Patrick Jonson </td>
+                                <td
+                                    style="width: 152px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    02 May 1980</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    Male</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    6 02”</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    180 lbs</td>
+                                <td
+                                    style="width: 230px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    HUW3584 New York 2015 Toyota Corolla White</td>
+                                <td
+                                    style="width: 215px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    Sexual Intercourse Non-NYS Felony Sex Offense</td>
+                                <td
+                                    style="width: 134px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><a href="#"><img src="../img/icons/buttons/view_btn.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td
+                                    style="width: 210px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><img width="40" src="../img/images/criminal list/Avatar.png" alt="">&nbsp;&nbsp;
+                                    Olivia Rhye </td>
+                                <td
+                                    style="width: 152px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    02 May 1980</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    Female</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    6 02”</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    180 lbs</td>
+                                <td
+                                    style="width: 230px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    HUW3584 New York 2015 Toyota Corolla White</td>
+                                <td
+                                    style="width: 215px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    Sexual Intercourse Non-NYS Felony Sex Offense</td>
+                                <td
+                                    style="width: 134px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><a href="#"><img src="../img/icons/buttons/view_btn.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td
+                                    style="width: 210px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><img width="40" src="../img/images/criminal list/Avatar-3.png" alt="">&nbsp;&nbsp;
+                                    Patrick Jonson </td>
+                                <td
+                                    style="width: 152px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    02 May 1980</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    Male</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    6 02”</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    180 lbs</td>
+                                <td
+                                    style="width: 230px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    HUW3584 New York 2015 Toyota Corolla White</td>
+                                <td
+                                    style="width: 215px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    Sexual Intercourse Non-NYS Felony Sex Offense</td>
+                                <td
+                                    style="width: 134px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><a href="#"><img src="../img/icons/buttons/view_btn.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td
+                                    style="width: 210px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><img width="40" src="../img/images/criminal list/Avatar-2.png" alt="">&nbsp;&nbsp;
+                                    Bryan Alvaro </td>
+                                <td
+                                    style="width: 152px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    02 May 1980</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    Male</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    6 02”</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    180 lbs</td>
+                                <td
+                                    style="width: 230px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    HUW3584 New York 2015 Toyota Corolla White</td>
+                                <td
+                                    style="width: 215px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    Sexual Intercourse Non-NYS Felony Sex Offense</td>
+                                <td
+                                    style="width: 134px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><a href="#"><img src="../img/icons/buttons/view_btn.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td
+                                    style="width: 210px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><img width="40" src="../img/images/criminal list/Avatar-1.png" alt="">&nbsp;&nbsp;
+                                    Stefano WIlliam </td>
+                                <td
+                                    style="width: 152px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    02 May 1980</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    Male</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    6 02”</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    180 lbs</td>
+                                <td
+                                    style="width: 230px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    HUW3584 New York 2015 Toyota Corolla White</td>
+                                <td
+                                    style="width: 215px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    Sexual Intercourse Non-NYS Felony Sex Offense</td>
+                                <td
+                                    style="width: 134px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><a href="#"><img src="../img/icons/buttons/view_btn.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td
+                                    style="width: 210px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><img width="40" src="../img/images/criminal list/Avatar-4.png" alt="">&nbsp;&nbsp;
+                                    Christian Roger </td>
+                                <td
+                                    style="width: 152px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    02 May 1980</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    Male</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    6 02”</td>
+                                <td
+                                    style="width: 110px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    180 lbs</td>
+                                <td
+                                    style="width: 230px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    HUW3584 New York 2015 Toyota Corolla White</td>
+                                <td
+                                    style="width: 215px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">
+                                    Sexual Intercourse Non-NYS Felony Sex Offense</td>
+                                <td
+                                    style="width: 134px;height: 72px;padding: 8px 24px;font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;"><a href="#"><img src="../img/icons/buttons/view_btn.svg" alt=""></a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main body end -->
+
+
+
+    <!-- js links -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Monitor | Sex Offenders</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="../img/icons/others/logo_favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+        <!-- top header -->
+        <nav class="navbar navbar-expand-lg menu">
+            <div class="container">
+                <a href="../index.html" class="navbar-brand"><img src="../img/icons/menu_icons/logo.svg"
+                        alt="logo"></a>
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item report_btn">
+                        <a class="nav-link text-light d-flex align-items-center" href="report.html"><img
+                                src="../img/icons/menu_icons/report.svg" style="width: 20px;height: 20px;"
+                                alt="">&nbsp;&nbsp;Report</a>
+                    </li>
+                    <li class="nav-item activity_btn ms-3 me-3">
+                        <a class="nav-link text-light d-flex align-items-center" href="activity.html"><img
+                                src="../img/icons/menu_icons/activity.svg" style="width: 20px;height: 20px;"
+                                alt="">&nbsp;&nbsp;Activity</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">
+                            <div class="notification">
+                                <img style="width: 18px;" src="../img/icons/menu_icons/notification.svg" alt="">
+                                <div class="dot"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="#" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><img style="width: 40px;"
+                                src="../img/icons/rounded_icons/profile.svg" alt="">&nbsp;&nbsp;&nbsp;&nbsp;Olivia
+                            Rhye&nbsp;&nbsp;&nbsp;<img style="width: 14px;"
+                                src="../img/icons/menu_icons/down arrow.svg" alt=""></a>
+                        <ul class="dropdown-menu sub_menu">
+                            <li><a class="dropdown-item sub_menu_item" href="my_account.html"><img
+                                        src="../img/icons/others/my_account.svg" alt="">&nbsp;&nbsp;My Account</a>
+                            </li>
+                            <li><a class="dropdown-item sub_menu_item" href="#"><img
+                                        src="../img/icons/others/settings.svg" alt="">&nbsp;&nbsp;Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item sub_menu_item" href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- menu -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg d-flex justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="../index.html"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/dashboard.svg" alt=""><span
+                                style="margin-left: 8px;">Dashboard</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="property.html"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/home.svg" alt=""><span style="margin-left: 8px;">Property</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="identity.html"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/identity.svg" alt=""><span
+                                style="margin-left: 8px;">Identity</span><span class="notify_number"
+                                style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="credit.html"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/credit.svg" alt=""><span style="margin-left: 8px;">Credit</span><span
+                                class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="crimes.html"><img style="width: 23px;"
+                                src="../img/icons/menu_icons/crime.svg" alt=""><span style="margin-left: 8px;">Crimes</span><span
+                                class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option active" href="#"><img style="width: 21px;"
+                                src="../img/icons/menu_icons/offender_blue.svg" alt=""><span style="margin-left: 10px;">Sex
+                                offenders</span><span class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="criminal_search.html"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/search.svg" alt=""><span style="margin-left: 8px;">Criminal
+                                Search</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main body start -->
+    <section class="bg-light overview_section">
+        <div class="container">
+            <!-- overview area start -->
+            <!-- heading -->
+            <h2 class="overview mb-3">Sex Offenders</h2>
+
+            <!-- crime section -->
+            <div class="row sex_offenders_background mx-auto bg-white">
+                <div class="col-5 crime_map_list">
+                    <!-- crime search buttons -->
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="crime_btn">List Data Only</a>&nbsp;
+                            <a href="#" class="crime_btn">Map View Only</a>&nbsp;
+                            <a href="#" class="crime_btn crime_btn_active">List Data + Map</a>
+                        </div>
+                    </div>
+
+                    <!-- selection and address area -->
+                    <div class="row mt-4">
+                        <div class="col-12 mt-2 d-flex align-items-center">
+                            <img src="../img/icons/rounded_icons/Icon_home32.svg" alt="">&nbsp;&nbsp;
+                            <span
+                                style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">My
+                                Home</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span
+                                style="font-weight: 700;font-size: 16px;line-height: 24px;text-align: right;letter-spacing: -0.01em;color: #2066DA;cursor: pointer;">Select
+                                Address &nbsp;<img src="../img/icons/others/blue_down_arrow.svg" alt=""></span>
+                        </div>
+                        <!-- address & horizontal bar -->
+                        <div class="col-12 mt-3">
+                            <p style="font-weight: 400;font-size: 14px;line-height: 20px;color: #344054;">800 West Ave,
+                                Miami Beach, Florida, 33139</p>
+                            <hr style="border: 1px solid #EFEFEF;">
+                        </div>
+                        <!-- status bars -->
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 mb-3 d-flex align-items-center">
+                                    <!-- crime selection -->
+                                    <div class="dropdown">
+                                        <button class="dropdown_btn dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            All Crimes&nbsp;&nbsp;<img src="../img/icons/others/down_arrow_blue.svg"
+                                                alt="">
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">All Crimes</a></li>
+                                            <li><a class="dropdown-item" href="#">Animal Cruelty</a></li>
+                                            <li><a class="dropdown-item" href="#">Arson</a></li>
+                                            <li><a class="dropdown-item" href="#">Assaul Offenses</a></li>
+                                            <li><a class="dropdown-item" href="#">Bribery</a></li>
+                                        </ul>
+                                    </div>
+                                    &nbsp;&nbsp;
+                                    <!-- status selection -->
+                                    <div class="dropdown">
+                                        <button class="dropdown_btn dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            All Status&nbsp;&nbsp;<img src="../img/icons/others/down_arrow_blue.svg"
+                                                alt="">
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">All Status</a></li>
+                                            <li><a class="dropdown-item" href="#">High</a></li>
+                                            <li><a class="dropdown-item" href="#">Medium</a></li>
+                                            <li><a class="dropdown-item" href="#">Low</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr style="border: 1px solid #EFEFEF;">
+                                <div class="col-12 mt-3">
+                                    <span
+                                        style="font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #909BAD;">Showing
+                                        <span
+                                            style="font-weight: 600;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #080808;">30
+                                            Crimes</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- crimes -->
+                    <div class="crimes_section">
+                        <div class="row mx-auto mt-4">
+                            <!-- crime -->
+                            <div class="col crimes">
+                                <div class="row">
+                                    <div class="col-2 d-flex align-items-center">
+                                        <img src="../img/images/Avatar.svg"
+                                            alt="">
+                                    </div>
+                                    <div class="col">
+                                        <span class="crime_name">Stefano William</span>
+                                        <p class="m-0" style="font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #67758C;">1965-02-17 | Male</p>
+                                    </div>
+                                    <div class="col-2 d-flex align-items-start">
+                                        <img class="ms-auto" src="../img/icons/rounded_icons/new_label.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mb-2">
+                                    <div class="col-4 d-flex align-items-center">
+                                        <span class="crime_code">Crime Code <span style="font-weight: 600;">:</span> <span
+                                                style="font-weight: 700;">11C</span></span>
+                                    </div>
+                                    <div class="col-8 d-flex align-items-center">
+                                        <span class="crime_date ms-auto">2019-10-01T09:30:00.000Z</span>
+                                    </div>
+                                </div>
+                                <div class="row mt-1">
+                                    <div class="col">
+                                        <span class="crime_status"><img src="../img/icons/rounded_icons/offender_28.svg" alt="">&nbsp;&nbsp;Sexual Assault</span>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col d-flex align-items-center">
+                                        <img src="../img/icons/buttons/high_btn.svg" alt="">
+                                    </div>
+                                    <div class="col d-flex align-items-center">
+                                        <span class="crime_info_btn ms-auto">More Info&nbsp;&nbsp;&nbsp;<img
+                                                src="../img/icons/others/right_arrow_blue.svg" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mx-auto mt-4">
+                            <!-- crime -->
+                            <div class="col crimes">
+                                <div class="row">
+                                    <div class="col-2 d-flex align-items-center">
+                                        <img width="64" src="../img/images/Avatar1.png" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <span class="crime_name">Christian Roger</span>
+                                        <p class="m-0" style="font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #67758C;">
+                                            1965-02-17 | Male</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mb-2">
+                                    <div class="col-4 d-flex align-items-center">
+                                        <span class="crime_code">Crime Code <span style="font-weight: 600;">:</span> <span
+                                                style="font-weight: 700;">11C</span></span>
+                                    </div>
+                                    <div class="col-8 d-flex align-items-center">
+                                        <span class="crime_date ms-auto">2019-10-01T09:30:00.000Z</span>
+                                    </div>
+                                </div>
+                                <div class="row mt-1">
+                                    <div class="col">
+                                        <span class="crime_status"><img src="../img/icons/rounded_icons/offender_28.svg" alt="">&nbsp;&nbsp;Sodomy</span>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col d-flex align-items-center">
+                                        <img src="../img/icons/buttons/medium_btn.svg" alt="">
+                                    </div>
+                                    <div class="col d-flex align-items-center">
+                                        <span class="crime_info_btn ms-auto">More Info&nbsp;&nbsp;&nbsp;<img
+                                                src="../img/icons/others/right_arrow_blue.svg" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mx-auto mt-4">
+                            <!-- crime -->
+                            <div class="col crimes">
+                                <div class="row">
+                                    <div class="col-2 d-flex align-items-center">
+                                        <img src="../img/images/Avatar2.svg" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <span class="crime_name">Olivia Rhye</span>
+                                        <p class="m-0"
+                                            style="font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #67758C;">
+                                            1965-02-17 | Female</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mb-2">
+                                    <div class="col-4 d-flex align-items-center">
+                                        <span class="crime_code">Crime Code <span style="font-weight: 600;">:</span> <span style="font-weight: 700;">11C</span></span>
+                                    </div>
+                                    <div class="col-8 d-flex align-items-center">
+                                        <span class="crime_date ms-auto">2019-10-01T09:30:00.000Z</span>
+                                    </div>
+                                </div>
+                                <div class="row mt-1">
+                                    <div class="col">
+                                        <span class="crime_status"><img src="../img/icons/rounded_icons/offender_28.svg" alt="">&nbsp;&nbsp;Fondling</span>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col d-flex align-items-center">
+                                        <img src="../img/icons/buttons/medium_btn.svg" alt="">
+                                    </div>
+                                    <div class="col d-flex align-items-center">
+                                        <span class="crime_info_btn ms-auto">More Info&nbsp;&nbsp;&nbsp;<img
+                                                src="../img/icons/others/right_arrow_blue.svg" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-7">
+                    <img src="../img/images/crime_location.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main body end -->
+
+
+    <!-- js links -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

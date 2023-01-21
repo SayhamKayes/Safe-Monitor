@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Monitor | Identity</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="../img/icons/others/logo_favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+        <!-- top header -->
+        <nav class="navbar navbar-expand-lg menu">
+            <div class="container">
+                <a href="../index.html" class="navbar-brand"><img src="../img/icons/menu_icons/logo.svg" alt="logo"></a>
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item report_btn">
+                        <a class="nav-link text-light d-flex align-items-center" href="report.html" style="font-weight: 700;font-size: 14px;line-height: 20px;"><img
+                                src="../img/icons/menu_icons/report.svg" style="width: 20px;height: 20px;"
+                                alt="">&nbsp;&nbsp;Report</a>
+                    </li>
+                    <li class="nav-item activity_btn ms-3 me-3">
+                        <a class="nav-link text-light d-flex align-items-center" href="activity.html" style="font-weight: 700;font-size: 14px;line-height: 20px;"><img
+                                src="../img/icons/menu_icons/activity.svg" style="width: 20px;height: 20px;"
+                                alt="">&nbsp;&nbsp;Activity</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">
+                            <div class="notification">
+                                <img style="width: 18px;" src="../img/icons/menu_icons/notification.svg" alt="">
+                                <div class="dot"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="#" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img
+                                style="width: 40px;" src="../img/icons/rounded_icons/profile.svg" alt="">&nbsp;&nbsp;&nbsp;&nbsp;Olivia
+                            Rhye&nbsp;&nbsp;&nbsp;<img style="width: 14px;" src="../img/icons/menu_icons/down arrow.svg" alt=""></a>
+                        <ul class="dropdown-menu sub_menu">
+                            <li><a class="dropdown-item sub_menu_item" href="my_account.html"><img src="../img/icons/others/my_account.svg"
+                                        alt="">&nbsp;&nbsp;My Account</a></li>
+                            <li><a class="dropdown-item sub_menu_item" href="#"><img src="../img/icons/others/settings.svg"
+                                        alt="">&nbsp;&nbsp;Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item sub_menu_item" href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- menu -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg d-flex justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="../index.html"><img
+                                style="width: 25px;" src="../img/icons/menu_icons/dashboard.svg"
+                                alt=""><span style="margin-left: 8px;">Dashboard</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="property.html"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/home.svg" alt=""><span style="margin-left: 8px;">Property</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option active" href="#"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/identity_blue.svg" alt=""><span style="margin-left: 8px;">Identity</span><span class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="credit.html"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/credit.svg" alt=""><span style="margin-left: 8px;">Credit</span><span class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="crimes.html"><img style="width: 23px;"
+                                src="../img/icons/menu_icons/crime.svg" alt=""><span style="margin-left: 8px;">Crimes</span><span class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="sex_offenders.html"><img style="width: 21px;"
+                                src="../img/icons/menu_icons/offender.svg" alt=""><span style="margin-left: 10px;">Sex offenders</span><span class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="criminal_search.html"><img style="width: 25px;"
+                                src="../img/icons/menu_icons/search.svg" alt=""><span style="margin-left: 8px;">Criminal Search</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main body start -->
+    <section class="bg-light Identity_section">
+        <div class="container">
+            <!-- heading -->
+            <h2 class="Identity_heading">Identity</h2>
+            <!-- ID safe area start -->
+            <div class="ID_safe mt-3">
+                <div class="row">
+                    <div class="col-md-2">
+                        <!-- address -->
+                        <p class="d-flex align-items-center score_heading">IDSafe</p>
+                    </div>
+                    <div class="col-md-10"></div>
+                </div>
+                <div class="row">
+                    <!-- graph -->
+                    <div class="col-3">
+                        <img class="img-fluid" src="../img/images/ID_safe_graph.svg" alt="">
+                    </div>
+                    <!-- vertical line -->
+                    <div class="col d-flex align-items-center">
+                        <div class="vr"></div>
+                    </div>
+                    <!-- Email -->
+                    <div class="col-2 mx-2 safe_emails">
+                        <div class="card-body">
+                            <img class="mb-2" src="../img/icons/rounded_icons/mail.svg" alt="...">
+                            <!-- card heading -->
+                            <h5 class="card-title ID_texts mb-2">Emails</h5>
+                            <p class="card-text ID_texts_number">25</p>
+                        </div>
+                    </div>
+                    <!-- Username -->
+                    <div class="col-2 mx-2 safe_user">
+                        <div class="card-body">
+                            <img class="mb-2" src="../img/icons/rounded_icons/user.svg" alt="...">
+                            <!-- card heading -->
+                            <h5 class="card-title ID_texts mb-2">Username</h5>
+                            <p class="card-text ID_texts_number">18</p>
+                        </div>
+                    </div>
+                    <!-- Financial Assets -->
+                    <div class="col-2 mx-2 safe_asset">
+                        <div class="card-body">
+                            <img class="mb-2" src="../img/icons/rounded_icons/financial_asset.svg" alt="...">
+                            <!-- card heading -->
+                            <h5 class="card-title ID_texts mb-2">Financial Assets</h5>
+                            <p class="card-text ID_texts_number">5</p>
+                        </div>
+                    </div>
+                    <!-- Other -->
+                    <div class="col-2 mx-2 safe_other">
+                        <div class="card-body">
+                            <img class="mb-2" src="../img/icons/rounded_icons/others.svg" alt="...">
+                            <!-- card heading -->
+                            <h5 class="card-title ID_texts mb-2">Other</h5>
+                            <p class="card-text ID_texts_number">12</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ID safe area end -->
+
+            <!-- exposed data area start -->
+            <div class="exposed_data mt-3">
+                <!-- graph area -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- heading -->
+                        <p class="exposed_data_heading">Exposed Data<span style="margin-left: 8px;"><img src="../img/icons/rounded_icons/number_8.svg" alt=""></span></p>
+                    </div>
+                    <div class="col-md-6"></div>
+                    <div class="col-md-2 d-flex align-items-center">
+                        <!-- date selection -->
+                        <div class="dropdown ms-auto">
+                            <button class="dropdown_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Date&nbsp;&nbsp;<img src="../img/icons/others/down_arrow_blue.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- graph -->
+                <div class="row">
+                    <div class="col">
+                        <p class="sub_header">Your data has been breached <span class="sub_header_number">12</span> times this month</p>
+                    </div>
+                </div>
+                <!-- graph -->
+                <div class="row pt-3">
+                    <div class="col">
+                        <img class="img-fluid" src="../img/images/product_graph.svg" alt="">
+                    </div>
+                </div>
+                <!-- graph values -->
+                <div class="row ms-3 mt-3 py-3">
+                    <div class="col-12 d-flex align-items-center justify-content-center value">
+                        <div class="div30"></div>
+                        <div class="div10 me-4">
+                            <span class=""><img src="../img/icons/dots/Indicator_legend.svg"
+                                    alt="">&nbsp;&nbsp;&nbsp;Email</span>
+                        </div>
+                        <div class="div10 me-4">
+                            <span class=""><img src="../img/icons/dots/Indicator_legend-1.svg"
+                                    alt="">&nbsp;&nbsp;&nbsp;Username</span>
+                        </div>
+                        <div class="div10 me-4">
+                            <span class=""><img src="../img/icons/dots/Indicator_legend-3.svg"
+                                    alt="">&nbsp;&nbsp;&nbsp;Financial Asset</span>
+                        </div>
+                        <div class="div10 me-4">
+                            <span class=""><img src="../img/icons/dots/Indicator_legend-2.svg"
+                                    alt="">&nbsp;&nbsp;&nbsp;Other</span>
+                        </div>
+                        <div class="div30"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- exposed data area end -->
+
+            <!-- report summary area start -->
+            <div class="report_summary mt-3">
+                <div class="row d-flex align-items-center">
+                    <div class="col">
+                        <p class="report_summary_heading" style="margin: 0;padding: 0;">Report <br /> Summary</p>
+                    </div>
+                    <div class="col border-end">
+                        <p class="report_number" style="margin: 0;padding: 0;text-align: center;">25</p>
+                        <p class="report_name" style="margin: 0;padding: 0;text-align: center;">Threats</p>
+                    </div>
+                    <div class="col border-end">
+                        <p class="report_number" style="margin: 0;padding: 0;text-align: center;">55</p>
+                        <p class="report_name" style="margin: 0;padding: 0;text-align: center;">Breaches</p>
+                    </div>
+                    <div class="col border-end">
+                        <p class="report_number" style="margin: 0;padding: 0;text-align: center;">16</p>
+                        <p class="report_name" style="margin: 0;padding: 0;text-align: center;">Passwords</p>
+                    </div>
+                    <div class="col border-end">
+                        <p class="report_number" style="margin: 0;padding: 0;text-align: center;">16</p>
+                        <p class="report_name" style="margin: 0;padding: 0;text-align: center;">Emails</p>
+                    </div>
+                    <!-- toast here -->
+                    <div class="col ms-4">
+                        <div class="Toast">
+                            <div class="Toast_left">
+                                <img class="Toast_icon" src="../img/icons/others/toast_icon.svg" alt="toast icon">
+                            </div>
+                            <div class="Toast_right">
+                                <p class="Toast_texts">What to do with this information? We have resources and guides to help you navigate those potential security threats. <a href="#">View Here</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- report summary area end -->
+
+            <!-- activity area start -->
+            <div class="activity_area mt-3">
+                <div class="row">
+                    <div class="col-md-2 d-flex align-items-center">
+                        <!-- activity heading -->
+                        <span class="activity_area_heading">Activity</span>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 d-flex align-items-center">
+                        <!-- status selection -->
+                        <div class="dropdown ms-auto me-3">
+                            <button class="dropdown_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Date Filter&nbsp;&nbsp;<img src="../img/icons/others/down_arrow_blue.svg" alt="">
+                            </button>
+                        </div>
+                        <!-- service selection -->
+                        <div class="dropdown">
+                            <button class="dropdown_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                All Categories&nbsp;&nbsp;<img src="../img/icons/others/down_arrow_blue.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- report area -->
+                <div class="row mt-4">
+                    <div class="col">
+                        <img class="img-fluid" src="../img/images/activity.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- activity area end -->
+        </div>
+    </section>
+    <!-- main body end -->
+
+
+    <!-- js links -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1664 @@
+/* google fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Inter'!important;
+}
+.container{
+    width: 95%!important;
+    margin: 0 auto;
+}
+
+/* 1.0 - Dashboard page */
+
+/* --- header --- */
+
+/* menu */
+.menu{
+    background: #000C40;
+    height: 80px;
+}
+.activity_btn,
+.report_btn{
+    padding: 0px 5px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+}
+.notify_number{
+    color: #000C40;
+    background: #B6DCFF;
+    padding: 0px 8px;
+    border-radius: 6px;
+}
+.notification{
+    position: relative;
+}
+.dot{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 1px;
+    left: 10px;
+    background: #F63D68;
+    border: 1.5px solid #000C40;
+    border-radius: 12px;
+}
+.navbar{
+    height: 80px;
+}
+.option{
+    padding: 10px 16px !important;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #000C40;
+}
+.option:hover{
+    background: #F4F7FD;
+    color: #000C40;
+}
+.active{
+    background: #F4F7FD;
+    color: #2066DA !important;
+}
+.sub_menu{
+    padding: 16px 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 40px 64px -12px rgba(0, 0, 0, 0.08), 0px 0px 14px -4px rgba(0, 0, 0, 0.05), 0px 32px 48px -8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+}
+.sub_menu_item {
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #67758C;
+}
+.sub_menu_item:hover {
+    padding: 12px 16px;
+    background: #F4F7FD;
+    color: #2066DA;
+    border-radius: 12px;
+}
+.my_account path {
+    fill: #2066DA;
+}
+/* --- header --- */
+
+
+/* --- overview --- */
+.overview_section{
+    padding: 48px 0px 96px;
+}
+/* heading */
+.overview{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    color: #080808;
+}
+/* card section */
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border: none;
+    border-radius: 8px;
+}
+/* card heading */
+.card-title{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #000C40;
+}
+/* card stats */
+.stats{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #080808;
+}
+.card-text{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #080808;
+}
+/* card button */
+.btn{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+/* verified card */
+.vrfy{
+    background: #E7F8EE;
+    border: 1px solid #05BF90;
+    border-radius: 8px;
+    color: #063722;
+}
+.vrfy:hover {
+    background: #E7F8EE;
+    border: 1px solid #05BF90;
+    border-radius: 8px;
+    color: #063722;
+}
+.vrfy_dot {
+    width: 6px;
+    height: 6px;
+    left: 1px;
+    top: 1px;
+    background: #05BF90;
+    border-radius: 50%;
+}
+/* high card */
+.high{
+    background: #FFF1F3;
+    border: 1px solid #F63D68;
+    border-radius: 8px;
+    color: #430A1C;
+}
+.high:hover{
+    background: #FFF1F3;
+    border: 1px solid #F63D68;
+    border-radius: 8px;
+    color: #430A1C;
+}
+.high_dot {
+    width: 6px;
+    height: 6px;
+    left: 1px;
+    top: 1px;
+    background: #F63D68;
+    border-radius: 50%;
+}
+/* low card */
+.low {
+    background: #E6FAFA;
+    border: 1px solid #06D2DD;
+    border-radius: 8px;
+    color: #183A68;
+}
+.low:hover {
+    background: #E6FAFA;
+    border: 1px solid #06D2DD;
+    border-radius: 8px;
+    color: #183A68;
+}
+.low_dot {
+    width: 6px;
+    height: 6px;
+    left: 1px;
+    top: 1px;
+    background: #06D2DD;
+    border-radius: 50%;
+}
+/* medium card */
+.mid {
+    background: #FEF7E6;
+    border: 1px solid #F6B305;
+    border-radius: 8px;
+    color: #483605;
+}
+.mid:hover {
+    background: #FEF7E6;
+    border: 1px solid #F6B305;
+    border-radius: 8px;
+    color: #483605;
+}
+.mid_dot{
+    width: 6px;
+    height: 6px;
+    left: 1px;
+    top: 1px;
+    background: #F6B305;
+    border-radius: 50%;
+}
+
+/* --- overview --- */
+
+/* --- safe_score --- */
+.safe_score{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border-radius: 8px;
+    padding: 24px;
+}
+/* address */
+.address{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #1A1D1F;
+}
+/* date selection */
+select[name="date"]{
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #344054;
+    padding: 5px;
+}
+/* score */
+.score{
+    background: rgba(32, 102, 218, 0.05);
+    border-radius: 12px;
+    padding: 18px;
+}
+.heading{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #000C40;
+}
+.score_stat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+.score_card {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: #080808;
+}
+.score_no{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: #2066DA;
+}
+.score_descript{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #67758C;
+}
+.parcent{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #05BF90;
+}
+/* graph */
+.graph{
+    border-left: 1px solid #EFEFEF;
+    border-right: 1px solid #EFEFEF;
+}
+.property,
+.identity,
+.Crimes,
+.offender{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #080808;
+}
+
+/* --- safe_score --- */
+
+/* --- safe home area --- */
+.safe_home{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border-radius: 8px;
+    padding: 24px;
+}
+.safe_home_heading{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #1A1D1F;
+}
+.date_btn1,
+.date_btn{
+    padding: 10px 16px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #67758C;
+    float: right;
+    overflow: hidden;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+}
+.date_btn:hover{
+
+    color: #2066DA;
+    background: #F4F7FD;
+    border: 1px solid #2066DA;
+}
+.data_active{
+    color: #2066DA;
+    background: #F4F7FD;
+    border: 1px solid #2066DA;
+}
+.value{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #080808;
+    float: right;
+}
+/* --- safe home area --- */
+
+/* --- map area --- */
+.map {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border-radius: 8px;
+    padding: 24px;
+}
+.map_border{
+    border-left: 1px solid #D0D5DD;
+}
+.map_btn{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #2066DA;
+    padding: 10px;
+    background: #F4F7FD;
+    border: 1px solid #2066DA;
+    border-radius: 8px;
+}
+/* --- map area --- */
+
+/* --- activity area --- */
+.activity{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border-radius: 8px;
+    padding: 24px;
+}
+.activity_heading{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #1A1D1F;
+}
+/* date selection */
+select[name="selection"] {
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #344054;
+    padding: 5px;
+    margin-left: 10px;
+}
+.activity_icon{
+    margin: 0;
+    padding: 0;
+}
+.activity_details{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #080808;
+}
+.activity_date{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #344054;
+}
+.view{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #2066DA;
+    text-decoration: none;
+}
+.viewAll_btn{
+    padding: 12px 20px;
+    background: #2066DA;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+}
+.viewAll_btn:hover{
+    border: 1px solid #2066DA;
+    color: #2066DA;
+}
+/* --- activity area --- */
+
+/* --- report area --- */
+.report{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border-radius: 8px;
+    padding: 24px;
+}
+.report_heading{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #1A1D1F;
+}
+.viewReport_btn{
+    padding: 12px 20px;
+    background: #2066DA;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+}
+.viewReport_btn:hover{
+    border: 1px solid #2066DA;
+    color: #2066DA;
+}
+.reportHeading{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #080808;
+}
+.report_hd_bd{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background: #F5F5F5;
+}
+.reportService{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #080808;
+}
+.reportDate{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #080808;
+}
+.row_border{
+    border: 1px solid #F5F5F5;
+}
+.row_lst{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: 1px solid #F5F5F5;
+}
+/* --- report area --- */
+
+/* 1.0 - Dashboard page */
+
+
+/* 2.0 - Property page & 3.0 - Identity page */
+
+/* --- ID safe area --- */
+.Identity_section{
+    padding: 48px 0px 96px;
+}
+.Identity_heading{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    color: #080808;
+}
+.ID_safe{
+    padding: 24px 24px 28px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border-radius: 8px;
+}
+/* heading */
+.score_heading{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #1A1D1F;
+}
+/* emails */
+.safe_emails{
+    padding: 20px;
+    background: #EAF3FF;
+    border: 1px solid rgba(32, 102, 218, 0.2);
+    border-radius: 12px;
+}
+/* username */
+.safe_user{
+    padding: 20px;
+    background: rgba(222, 241, 168, 0.25);
+    border: 1px solid #DEF1A8;
+    border-radius: 12px;
+}
+/* fincial assets */
+.safe_asset{
+    padding: 20px;
+    background: rgba(56, 163, 165, 0.15);
+    border: 1px solid rgba(56, 163, 165, 0.5);
+    border-radius: 12px;
+}
+/* other */
+.safe_other{
+    padding: 20px;
+    background: rgba(255, 230, 141, 0.25);
+    border: 1px solid #FFD670;
+    border-radius: 12px;
+}
+.ID_texts{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #344054;
+}
+.ID_texts_number{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    color: #000C40;
+}
+/* --- ID safe area --- */
+
+/* --- exposed data area --- */
+.exposed_data{
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border-radius: 8px;
+}
+.exposed_data_heading{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #080808;
+}
+.sub_header{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #344054;
+}
+.sub_header_number{
+    color: #2066DA;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+}
+/* --- exposed data area --- */
+
+/* --- report summary area --- */
+.report_summary{
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border-radius: 8px;
+}
+/* toast */
+.report_summary_heading{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #1A1D1F;
+}
+.report_number{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #2066DA;
+}
+.report_name{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #000C40;
+}
+.Toast{
+    display: flex;
+    flex-direction: row;
+    width: 428px;
+    height: 92px;
+    padding: 16px 12px;
+    background: #F4F7FD;
+    border: 1px solid #2066DA;
+    border-radius: 8px;
+}
+.Toast_left{
+    width: 8%;
+    float: left;
+}
+.Toast_right{
+    width: 92%;
+    float: left;
+    overflow: hidden;
+}
+.Toast_texts{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #000C40;
+}
+/* --- report summary area --- */
+
+/* --- activity area --- */
+.activity_area{
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border-radius: 8px;
+}
+.activity_area_heading{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #1A1D1F;
+}
+.propertyHeading{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+}
+/* --- activity area --- */
+
+/* 2.0 - Property page & 3.0 - Identity page */
+
+
+/* 4.0 - Credit page */
+
+/* --- heading --- */
+.heading_left {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    color: #080808;
+}
+.heading_right {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    color: #2066DA;
+}
+
+/* --- credit monitoring left side --- */
+.credit_stats_left{
+    height: 683px;
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border-radius: 8px;
+}
+.credit_score{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #1A1D1F;
+}
+.status_text{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #000C40;
+}
+.score_date{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #67758C;
+}
+.score_text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #67758C;
+}
+.score_text2{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: -0.01em;
+    color: #080808;
+}
+/* --- credit monitoring left side --- */
+
+/* --- credit monitoring right side --- */
+.credit_stats_right{
+    height: 316px;
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border-radius: 8px;
+}
+.Monitor_heading{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #1A1D1F;
+}
+.monitor_stats{
+    padding: 20px 14px;
+    background: rgba(32, 102, 218, 0.05);
+    border-radius: 12px;
+}
+.monitor_name{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #000C40;
+}
+.monitor_comments{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #67758C;
+}
+.monitor_result{
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+/* monitoring graph */
+.credit_stats_right2 {
+    margin-top: 24px;
+    height: 343px;
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border-radius: 8px;
+}
+.monitoring_graph_title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #1A1D1F;
+    margin-bottom: 50px;
+}
+/* --- credit monitoring right side --- */
+
+/* --- credit report --- */
+.credit_report{
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border-radius: 8px;
+}
+.credit_report_number{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #2066DA;
+}
+.credit_report_area{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #000C40;
+}
+/* --- credit report --- */
+
+/* --- report summary --- */
+.report_summary_area{
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border-radius: 8px;
+}
+/* summary heading */
+.summary_heading{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #344054;
+}
+.report_date_heading{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #344054;
+}
+.report_date_details{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #000C40;
+}
+/* report score and rating */
+.report_score{
+    padding: 20px;
+    background: rgba(32, 102, 218, 0.05);
+    border-radius: 12px;
+}
+.report_score_heading{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #000C40;
+}
+.report_score_headDetails{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #67758C;
+}
+.report_score_heading2{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #344054;
+}
+.report_score_head2Details{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #000C40;
+}
+.report_score_head2Details2{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #05BF90;
+}
+/* credit account */
+.credit_account{
+    padding: 20px;
+    background: rgba(56, 163, 165, 0.1);
+    border-radius: 12px;
+}
+.credit_account_heading{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #000C40;
+}
+.credit_account_detail{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #67758C;
+}
+/* other credit */
+.others{
+    padding: 20px;
+    background: #FEF7E6;
+    border-radius: 12px;
+}
+.others_credit_number{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #2066DA;
+}
+.others_credit_name{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #344054;
+}
+/* --- report summary --- */
+
+/* 4.0 - Credit page */
+
+
+/* 5.0 - crime page */
+
+/* --- crime section --- */
+.crime_search_section{
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(16px);
+}
+/* --- crime section button --- */
+.crime_btn{
+    text-decoration: none;
+    padding: 10px 16px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #67758C;
+    border: 1px solid #D0D5DD;
+}
+.crime_btn:hover{
+    color: #2066DA;
+    border: 1px solid #2066DA;
+}
+.crime_btn_active{
+    color: #2066DA;
+    border: 1px solid #2066DA;
+}
+/* --- status bars --- */
+.dropdown_btn{
+    padding: 10px 16px !important;
+    background: #FFFFFF!important;
+    border: 1px solid #D0D5DD!important;
+    border-radius: 8px!important;
+    color: #67758C!important;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+.dropdown_btn1{
+    color: #344054 !important;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border: none;
+}
+/* --- crimes --- */
+.crimes{
+    padding: 16px;
+    background: #F5F5F5;
+    border-radius: 8px;
+}
+.crime_name{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #000C40;
+}
+.crime_code{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    color: #1B4EA4;
+}
+.crime_date{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #67758C;
+}
+.crime_status{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #344054;
+}
+.crime_info_btn{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #2066DA;
+    cursor: pointer;
+}
+
+/* --- 5.0.1 - crime map --- */
+
+.crime_map_background{
+    width: 1300px;
+    height: 836px;
+    background: url(../img/images/Map.png) 100% / 100% no-repeat;
+}
+.crime_search{
+    width: 465px;
+    height: 75px;
+    padding: 24px;
+    background: #FFFFFF;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(16px);
+}
+
+/* --- 5.0.1 - crime map --- */
+
+/* --- 5.0.2 - crime map + list page --- */
+
+.crime_location_background{
+    background: url(../img/images/Map.png) 100% / 100% no-repeat;
+    background-size: cover;
+}
+.crime_map_list{
+    padding: 24px;
+    width: 492px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(16px);
+}
+
+/* --- 5.0.2 - crime map + list page --- */
+
+/* 5.0 - crime page */
+
+
+/* 6.0 - sex offenders page */
+
+.sex_offenders_background{
+    background: url(../img/images/Map.png) 100% / 100% no-repeat;
+    background-size: cover;
+}
+
+/* 6.0 - sex offenders page */
+
+
+/* 7.0 - criminal search page */
+
+.criminal_search_section{
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border-radius: 8px;
+}
+/* --- search box --- */
+.criminalSearch{
+    position: relative;
+    border-radius: 16px;
+}
+.criminalSearch .fa-search {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    color: #67758C;
+}
+.criminalSearch .fa-location-dot {
+    position: absolute;
+    top: 23px;
+    left: 575px;
+    color: #67758C;
+}
+/* --- more search button --- */
+.Court_record_btn:hover{
+    color: #67758C;
+    border: 1px solid #D0D5DD;
+    cursor: auto;
+}
+/* --- offender results --- */
+.offender_result{
+    padding: 20px;
+    background: #FAF1E8;
+    border-radius: 12px;
+}
+/* --- criminal table --- */
+table{
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+}
+tr{
+    border: 1px solid #EFEFEF;
+}
+
+/* --- 7.0.1 - corrections page --- */
+.offender_correcitons{
+    padding: 20px;
+    background: rgba(56, 163, 165, 0.1);
+    border-radius: 12px;
+}
+
+/* --- 7.0.1 - corrections page --- */
+
+
+/* 7.0 - criminal search page */
+
+
+/* 8.0 - My Account page */
+
+.settings{
+    padding: 24px 24px 28px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.03);
+    border-radius: 8px;
+}
+
+/* --- my account menu --- */
+.account_menu{
+    padding: 20px;
+    border: 1px solid #EFEFEF;
+    border-radius: 12px;
+}
+.menu_background{
+    margin: 0;
+    padding: 12px 16px;
+    width: 240px;
+    height: 48px;
+    border-radius: 12px;
+}
+.menu_background:hover{
+    background: #F4F7FD;
+    color: #000C40;
+}
+.menu_background_active{
+    background: #F4F7FD;
+}
+.menu_background_active:hover {
+    color: #2066DA;
+}
+.account_menu_item{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #000C40;
+    text-decoration: none;
+}
+.menu_active{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #2066DA;
+}
+/* --- my account menu --- */
+
+/* --- 8.0.1 - My account page --- */
+.form_heading{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #080808;
+}
+.form_sub_heading{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #344054;
+}
+/* my account form */
+.input_heading{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #67758C;
+}
+.input_background{
+    background: #F5F5F5;
+    padding: 12px;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 12px;
+    border: none;
+}
+/* form button */
+.cancel_btn{
+    display: inline-block;
+    padding: 10px 16px;
+    gap: 8px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    background: #EFEFEF;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #344054;
+}
+.cancel_btn:hover{
+    color: #344054;
+}
+.save_btn{
+    display: inline-block;
+    padding: 10px 16px;
+    gap: 8px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    background: #2066DA;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+}
+.save_btn:hover{
+    color: #FFFFFF;
+}
+/* --- 8.0.1 - My account page --- */
+
+/* --- 8.0.2 - monitoring information page --- */
+
+.monitor_heading{
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #080808;
+}
+.monitor_sub_heading{
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #67758C;
+}
+.property_block{
+    padding: 16px;
+    background: #F5F5F5;
+    border: 1px solid #EFEFEF;
+    border-radius: 12px;
+}
+.property_monitor_heading{
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #080808;
+}
+.property_monitor_address{
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #344054;
+}
+
+/* --- 8.0.2 - monitoring information page --- */
+
+/* --- 8.0.3 - my plan page --- */
+
+/* your plan section */
+.plans{
+    padding: 20px;
+    width: 304px;
+    height: 540px;
+    border-radius: 12px;
+}
+.plan_name{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #080808;
+}
+.plan_per_month{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    color: #000C40;
+}
+.plan_detail{
+    margin: 12px 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #080808;
+}
+.basic_plan{
+    position: relative;
+    background: #F4F7FD;
+    margin-right: 24px;
+}
+.basic_plan .plan_btn{
+    position: absolute;
+    bottom: 20px;
+}
+.business_plan{
+    position: relative;
+    background: #EBF6F6;
+    margin-right: 24px;
+}
+.business_plan .plan_btn{
+    position: absolute;
+    bottom: 20px;
+}
+.premium_plan{
+    position: relative;
+    background: #FEF7E6;
+}
+.premium_plan .plan_btn{
+    position: absolute;
+    bottom: 20px;
+}
+
+/* --- 8.0.3 - my plan page --- */
+
+/* --- 8.0.4 - billing page --- */
+
+/* billing methods */
+.billing_left{
+    margin-right: 12px;
+    padding: 20px;
+    width: 468px;
+    height: 300px;
+    background: #F4F7FD;
+    border-radius: 12px;
+}
+.left{
+    display: inline-block;
+    width: 12%;
+}
+.right{
+    display: inline-block;
+    width: 88%;
+}
+.billing_right{
+    margin-left: 12px;
+    padding: 20px;
+    width: 468px;
+    height: 300px;
+    background: #FFFFFF;
+    border: 2px solid #EFEFEF;
+    border-radius: 12px;
+}
+.left1 {
+    display: inline-block;
+    width: 16%;
+    padding: 0;
+}
+.right1 {
+    display: inline-block;
+    width: 84%;
+}
+
+/* --- 8.0.4 - billing page --- */
+
+/* --- 8.0.5 - notification panel --- */
+
+/* notification panel */
+.notification_panel{
+    padding: 16px;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 12px;
+}
+.switch_panel{
+    padding: 16px;
+    background: #F4F7FD;
+    border-radius: 12px;
+}
+/* switch color management */
+.form-check-input1:checked {
+    background-color: #8BCFD3;
+    border-color: #8BCFD3;
+}
+.form-switch .form-check-input1 {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%238BCFD3'/%3e%3c/svg%3e");
+}
+.form-switch .form-check-input1:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23ffffff'/%3e%3c/svg%3e");
+}
+.profile_activity_panel{
+    height: 56px;
+    padding: 16px;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 12px;
+}
+
+/* --- 8.0.5 - notification panel --- */
+
+/* --- 8.0.6 - security & privacy --- */
+
+.authenticator{
+    margin-top: 35px;
+}
+/* Two factor authentication */
+.authentication{
+    padding: 20px;
+    background: #FFFFFF;
+    border: 2px solid #EFEFEF;
+    border-radius: 12px;
+}
+/* setup step */
+.setup_steps{
+    padding: 16px;
+    background: #FFFFFF;
+    border: 2px solid #EFEFEF;
+    border-radius: 12px;
+}
+/* device sign in info */
+.device_info{
+    padding: 20px;
+    background: #FFFFFF;
+    border: 2px solid #EFEFEF;
+    border-radius: 12px;
+}
+.signed_devices{
+    padding: 16px;
+    background: #FFFFFF;
+    border: 2px solid #EFEFEF;
+    border-radius: 12px;
+}
+/* password */
+.passwordSection{
+    padding: 20px 20px 0px;
+    background: #FFFFFF;
+    border: 2px solid #EFEFEF;
+    border-radius: 12px;
+}
+.password_rules{
+    padding: 19px;
+    background: #F4F7FD;
+    border-radius: 12px;
+}
+
+/* --- 8.0.6 - security & privacy --- */
+
+/* --- 8.0.7 - resource page --- */
+
+.resource_heading{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #080808;
+}
+.resource_sub_heading{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #67758C;
+}
+/* search box */
+.search {
+    position: relative;
+}
+.searchBox {
+    text-indent: 25px;
+    border: none;
+    background: #f0f0f0;
+    border-radius: 12px;
+}
+.searchBox:focus {
+    box-shadow: none;
+    border: 2px solid #f0f0f0;
+}
+.search .fa-search {
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    color: #67758C;
+}
+.search_btn {
+    background: #2066DA;
+    border-radius: 12px;
+}
+
+/* icon boxes of resources */
+.resource_box{
+    padding: 32px;
+    background: #FFFFFF;
+    border: 2px solid #EFEFEF;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* helpful information */
+.helpful_info_heading{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    color: #080808;
+}
+.helpful_info_sub_heading{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #67758C;
+}
+.collapse_box{
+    padding: 20px;
+    background: #FFFFFF;
+    border: 2px solid #EFEFEF;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* need more help section */
+.help{
+    padding: 32px;
+    background: #F4F7FD;
+    border-radius: 12px;
+}
+
+/* blog & news card section */
+.card_style{
+    padding: 20px;
+    border: 2px solid #EFEFEF;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* --- 8.0.7 - resource page --- */
+/* 8.0 - My Account page */

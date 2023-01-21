@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Monitor | My Account</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="../../img/icons/others/logo_favicon.svg" type="image/x-icon">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+        <!-- top header -->
+        <nav class="navbar navbar-expand-lg menu">
+            <div class="container">
+                <a href="../../index.html" class="navbar-brand"><img src="../../img/icons/menu_icons/logo.svg"
+                        alt="logo"></a>
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item report_btn">
+                        <a class="nav-link text-light d-flex align-items-center" href="../report.html" style="font-weight: 700;font-size: 14px;line-height: 20px;"><img
+                                src="../../img/icons/menu_icons/report.svg" style="width: 20px;height: 20px;"
+                                alt="">&nbsp;&nbsp;Report</a>
+                    </li>
+                    <li class="nav-item activity_btn ms-3 me-3">
+                        <a class="nav-link text-light d-flex align-items-center" href="../activity.html" style="font-weight: 700;font-size: 14px;line-height: 20px;"><img
+                                src="../../img/icons/menu_icons/activity.svg" style="width: 20px;height: 20px;"
+                                alt="">&nbsp;&nbsp;Activity</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">
+                            <div class="notification">
+                                <img style="width: 18px;" src="../../img/icons/menu_icons/notification.svg" alt="">
+                                <div class="dot"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="#" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><img style="width: 40px;"
+                                src="../../img/icons/rounded_icons/profile.svg" alt="">&nbsp;&nbsp;&nbsp;&nbsp;Olivia
+                            Rhye&nbsp;&nbsp;&nbsp;<img style="width: 14px;"
+                                src="../../img/icons/menu_icons/down arrow.svg" alt=""></a>
+                        <ul class="dropdown-menu sub_menu">
+                            <li><a class="dropdown-item sub_menu_item" href="../my_account.html"><img
+                                        src="../../img/icons/others/my_account.svg" alt="">&nbsp;&nbsp;My Account</a>
+                            </li>
+                            <li><a class="dropdown-item sub_menu_item" href="#"><img
+                                        src="../../img/icons/others/settings.svg" alt="">&nbsp;&nbsp;Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item sub_menu_item" href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- menu -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg d-flex justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="../../index.html"><img
+                                style="width: 25px;" src="../../img/icons/menu_icons/dashboard.svg"
+                                alt=""><span style="margin-left: 8px;">Dashboard</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="../property.html"><img
+                                style="width: 25px;" src="../../img/icons/menu_icons/home.svg"
+                                alt=""><span style="margin-left: 8px;">Property</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="../identity.html"><img
+                                style="width: 25px;" src="../../img/icons/menu_icons/identity.svg"
+                                alt=""><span style="margin-left: 8px;">Identity</span><span class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="../credit.html"><img
+                                style="width: 25px;" src="../../img/icons/menu_icons/credit.svg"
+                                alt=""><span style="margin-left: 8px;">Credit</span><span class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="../crimes.html"><img
+                                style="width: 23px;" src="../../img/icons/menu_icons/crime.svg"
+                                alt=""><span style="margin-left: 8px;">Crimes</span><span class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="../sex_offenders.html"><img
+                                style="width: 21px;" src="../../img/icons/menu_icons/offender.svg"
+                                alt=""><span style="margin-left: 10px;">Sex offenders</span><span class="notify_number" style="margin-left: 8px;">8</span></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link d-flex align-items-center option" href="../criminal_search.html"><img
+                                style="width: 25px;" src="../../img/icons/menu_icons/search.svg"
+                                alt=""><span style="margin-left: 8px;">Criminal Search</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main body start -->
+    <section class="bg-light overview_section">
+        <div class="container">
+            <!-- heading -->
+            <h2 class="overview pb-3">Setting</h2>
+            <div class="settings">
+                <div class="row">
+                    <!-- my account menu -->
+                    <div class="col-3">
+                        <div class="account_menu">
+                            <div style="margin-bottom: 8px;">
+                                <a class="account_menu_item" href="../my_account.html">
+                                    <p class="menu_background"><img src="../../img/icons/others/account_black.svg" alt="">&nbsp; My Account</p>
+                                </a>
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                <a class="account_menu_item" href="../my_account pages/monitoring_info.html">
+                                    <p class="menu_background"><img src="../../img/icons/others/monitor_black.svg" alt="">&nbsp; Monitoring
+                                        Information</p>
+                                </a>
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                <a class="account_menu_item" href="../my_account pages/my_plan.html">
+                                    <p class="menu_background"><img src="../../img/icons/others/plan_black.svg" alt="">&nbsp; My Plan</p>
+                                </a>
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                <a class="account_menu_item" href="../my_account pages/billing.html">
+                                    <p class="menu_background"><img src="../../img/icons/others/billing_black.svg" alt="">&nbsp; Billing</p>
+                                </a>
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                <a class="account_menu_item" href="../my_account pages/notifications.html">
+                                    <p class="menu_background"><img src="../../img/icons/others/notification_black.svg" alt="">&nbsp; Notifications</p>
+                                </a>
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                <a class="account_menu_item" href="../my_account pages/security&privacy.html">
+                                    <p class="menu_background"><img src="../../img/icons/others/security_black.svg" alt="">&nbsp; Security & Privacy</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="account_menu_item menu_active" href="#">
+                                    <p class="menu_background menu_background_active"><img src="../../img/icons/others/resources.svg" alt="">&nbsp;
+                                        Resources</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- resource page -->
+                    <div class="col-9 mt-5">
+                        <h2 class="resource_heading text-center">SafeMonitor Ressources</h2>
+                        <p class="resource_sub_heading text-center">Important Ressources and Information</p>
+
+                        <!-- search box -->
+                        <form class="d-flex mt-4 search" role="search">
+                            <i class="fa fa-search"></i>
+                            <input class="form-control searchBox me-3" type="search" placeholder="Search" aria-label="Search">
+                            <img src="../../img/icons/buttons/search_btn.svg" alt="">
+                        </form>
+
+                        <!-- icon boxes of resources -->
+                        <div class="row mx-auto mt-5">
+                            <div class="col me-4 resource_box text-center">
+                                <img src="../../img/icons/rounded_icons/property_safe.svg" alt="">
+                                <p class="m-0 pt-2" style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #000C40;">Helpful Information</p>
+                                <p class="m-0 pt-2" style="font-weight: 500;font-size: 14px;line-height: 20px;text-align: center;letter-spacing: -0.01em;color: #67758C;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            </div>
+                            <div class="col me-4 resource_box text-center">
+                                <img src="../../img/icons/rounded_icons/property_safe.svg" alt="">
+                                <p class="m-0 pt-2" style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #000C40;">FAQ</p>
+                                <p class="m-0 pt-2" style="font-weight: 500;font-size: 14px;line-height: 20px;text-align: center;letter-spacing: -0.01em;color: #67758C;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            </div>
+                            <div class="col resource_box text-center">
+                                <img src="../../img/icons/rounded_icons/property_safe.svg" alt="">
+                                <p class="m-0 pt-2" style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #000C40;">Blog and News</p>
+                                <p class="m-0 pt-2" style="font-weight: 500;font-size: 14px;line-height: 20px;text-align: center;letter-spacing: -0.01em;color: #67758C;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            </div>
+                        </div>
+
+                        <!-- helpful information -->
+                        <div class="helpful_info" style="margin-top: 63px;">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="helpful_info_heading text-center">Helpful Information
+                                    </h2>
+                                    <p class="helpful_info_sub_heading text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                            </div>
+                            <!-- collapse boxes -->
+                            <div class="row mx-auto">
+                                <div class="col">
+                                    <!-- information -->
+                                    <div class="row mt-3">
+                                        <div class="col collapse_box">
+                                            <p class="m-0"
+                                                style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">Community Watch<img class="float-end" src="../../img/icons/rounded_icons/collapse_icon.svg" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- information -->
+                                    <div class="row mt-3">
+                                        <div class="col collapse_box">
+                                            <p class="m-0"
+                                                style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">Child Abuse Prevention Organisations<img class="float-end" src="../../img/icons/rounded_icons/collapse_icon.svg" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- information -->
+                                    <div class="row mt-3">
+                                        <div class="col collapse_box">
+                                            <p class="m-0"
+                                                style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">Law Enforcement Information<img class="float-end" src="../../img/icons/rounded_icons/collapse_icon.svg" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- view more button -->
+                                    <div class="row" style="margin-top: 32px;">
+                                        <div class="col text-center">
+                                            <a href="#"><img src="../../img/icons/buttons/view_more_btn.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- getting started section -->
+                        <div class="getting_started_section" style="margin-top: 63px;">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="helpful_info_heading text-center">Getting Started
+                                    </h2>
+                                    <p class="helpful_info_sub_heading text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                            </div>
+                            <!-- information -->
+                            <div class="row mx-auto mt-4">
+                                <div class="col me-4 collapse_box">
+                                    <p class="m-0"
+                                        style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">General Description<img class="float-end" src="../../img/icons/rounded_icons/collapse_icon.svg" alt="">
+                                    </p>
+                                </div>
+                                <div class="col collapse_box">
+                                    <p class="m-0" style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">
+                                        Credit<img class="float-end" src="../../img/icons/rounded_icons/collapse_icon.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- information -->
+                            <div class="row mx-auto mt-4">
+                                <div class="col me-4 collapse_box">
+                                    <p class="m-0"
+                                        style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">Dashboard<img class="float-end" src="../../img/icons/rounded_icons/collapse_icon.svg" alt="">
+                                    </p>
+                                </div>
+                                <div class="col collapse_box">
+                                    <p class="m-0"
+                                        style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">
+                                        Crimes<img class="float-end" src="../../img/icons/rounded_icons/collapse_icon.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- information -->
+                            <div class="row mx-auto mt-4">
+                                <div class="col me-4 collapse_box">
+                                    <p class="m-0"
+                                        style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">Property<img class="float-end" src="../../img/icons/rounded_icons/collapse_icon.svg" alt="">
+                                    </p>
+                                </div>
+                                <div class="col collapse_box">
+                                    <p class="m-0"
+                                        style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">
+                                        Sex Offenders<img class="float-end" src="../../img/icons/rounded_icons/collapse_icon.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- information -->
+                            <div class="row mx-auto mt-4">
+                                <div class="col me-4 collapse_box">
+                                    <p class="m-0"
+                                        style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">Identity<img class="float-end" src="../../img/icons/rounded_icons/collapse_icon.svg" alt="">
+                                    </p>
+                                </div>
+                                <div class="col collapse_box">
+                                    <p class="m-0"
+                                        style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">
+                                        Criminal Search<img class="float-end" src="../../img/icons/rounded_icons/collapse_icon.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- view more button -->
+                            <div class="row" style="margin-top: 32px;">
+                                <div class="col text-center">
+                                    <a href="#"><img src="../../img/icons/buttons/view_more_btn.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- billing questions section -->
+                        <div class="getting_started_section" style="margin-top: 63px;">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="helpful_info_heading text-center">Billing Questions
+                                    </h2>
+                                    <p class="helpful_info_sub_heading text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor</p>
+                                </div>
+                            </div>
+                            <!-- information -->
+                            <div class="row mx-auto mt-4">
+                                <div class="col me-4 collapse_box">
+                                    <p class="m-0"
+                                        style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">Before Your Purchase<img class="float-end" src="../../img/icons/rounded_icons/collapse_icon.svg" alt="">
+                                    </p>
+                                </div>
+                                <div class="col collapse_box">
+                                    <p class="m-0"
+                                        style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">Payment & Purchase<img class="float-end" src="../../img/icons/rounded_icons/collapse_icon.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- information -->
+                            <div class="row mx-auto mt-4">
+                                <div class="col me-4 collapse_box">
+                                    <p class="m-0"
+                                        style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">Purchase Process<img class="float-end" src="../../img/icons/rounded_icons/collapse_icon.svg" alt="">
+                                    </p>
+                                </div>
+                                <div class="col collapse_box">
+                                    <p class="m-0"
+                                        style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #080808;">Other<img class="float-end" src="../../img/icons/rounded_icons/collapse_icon.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- view more button -->
+                            <div class="row" style="margin: 32px 0 63px;">
+                                <div class="col text-center">
+                                    <a href="#"><img src="../../img/icons/buttons/view_more_btn.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- need more help section -->
+                        <div class="help">
+                            <div class="row d-flex align-items-center">
+                                <div class="col">
+                                    <p class="m-0" style="font-weight: 600;font-size: 32px;line-height: 40px;letter-spacing: -0.03em;color: #000C40;">Need more help?</p>
+                                    <p class="m-0" style="padding-top: 12px;font-weight: 600;font-size: 16px;line-height: 24px;letter-spacing: -0.01em;color: #67758C;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="#"><img class="float-end" src="../../img/icons/buttons/submit_ticket_btn.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- blog & news -->
+                        <div class="blog_news" style="margin-top: 63px;">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="helpful_info_heading text-center">Blog and News
+                                    </h2>
+                                    <p class="helpful_info_sub_heading text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- blog & news card section -->
+                        <div class="row mt-4">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../../img/images/blog1.svg" class="card-img-top" alt="...">
+                                    <div class="card-body card_style">
+                                        <div class="row mb-2">
+                                            <div class="col">
+                                                <p class="m-0" style="font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #909BAD;">01 Jan, 2021</p>
+                                            </div>
+                                            <div class="col">
+                                                <img class="float-end" src="../../img/icons/rounded_icons/blog_label.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <h5 style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #000C40;">Helpful Information</h5>
+                                        <p style="font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #67758C;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../../img/images/blog2.svg" class="card-img-top" alt="...">
+                                    <div class="card-body card_style">
+                                        <div class="row mb-2">
+                                            <div class="col">
+                                                <p class="m-0" style="font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #909BAD;">01 Jan, 2021</p>
+                                            </div>
+                                            <div class="col">
+                                                <img class="float-end" src="../../img/icons/rounded_icons/blog_label.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <h5 style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #000C40;">Helpful
+                                            Information</h5>
+                                        <p style="font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #67758C;">Lorem ipsum dolor
+                                            sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../../img/images/blog3.svg" class="card-img-top" alt="...">
+                                    <div class="card-body card_style">
+                                        <div class="row mb-2">
+                                            <div class="col">
+                                                <p class="m-0" style="font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #909BAD;">01 Jan, 2021</p>
+                                            </div>
+                                            <div class="col">
+                                                <img class="float-end" src="../../img/icons/rounded_icons/news_label.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <h5 style="font-weight: 600;font-size: 20px;line-height: 32px;letter-spacing: -0.02em;color: #000C40;">Helpful
+                                            Information</h5>
+                                        <p style="font-weight: 500;font-size: 14px;line-height: 20px;letter-spacing: -0.01em;color: #67758C;">Lorem ipsum dolor
+                                            sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- view more button -->
+                            <div class="row" style="margin-top: 32px;">
+                                <div class="col text-center">
+                                    <a style="padding: 12px 20px;background: #EFEFEF;border-radius: 12px;display: inline-block;text-decoration: none;font-weight: 700;font-size: 16px;line-height: 24px;letter-spacing: -0.01em;color: #344054;" href="#">All Blog & News</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main body end -->
+
+
+    <!-- js links -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/index.js"></script>
+</body>
+
+</html>
